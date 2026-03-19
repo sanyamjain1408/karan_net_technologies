@@ -43,7 +43,7 @@ class _SearchScreenState extends State<SearchScreen> {
         child: Column(
           children: [
 
-            /// 🔙 BACK + SEARCH
+            /// BACK + SEARCH
             Container(
               padding: const EdgeInsets.fromLTRB(0, 12, 12, 12),
               margin: EdgeInsets.fromLTRB(0, 12, 12, 12),
@@ -70,7 +70,7 @@ class _SearchScreenState extends State<SearchScreen> {
                       ),
                       child: TextField(
                         controller: controller,
-                        autofocus: true, // 🔥 open hote hi keyboard
+                        autofocus: true, //  open hote hi keyboard
                         onChanged: filterSearch,
                         decoration: const InputDecoration(
                           hintText: "Search Services...",
@@ -83,7 +83,7 @@ class _SearchScreenState extends State<SearchScreen> {
               ),
             ),
 
-            /// 🔽 RESULT BOX
+            ///  RESULT BOX
             Expanded(
               child: Container(
                 padding: const EdgeInsets.all(16),

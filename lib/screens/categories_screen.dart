@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-/// 🔥 MODEL
+///  MODEL
 class CategoryModel {
   final String name;
   final String image;
@@ -8,7 +8,7 @@ class CategoryModel {
   CategoryModel({required this.name, required this.image});
 }
 
-/// 🔥 SCREEN
+/// SCREEN
 class CategoriesScreen extends StatefulWidget {
   const CategoriesScreen({super.key});
 
@@ -18,7 +18,7 @@ class CategoriesScreen extends StatefulWidget {
 
 class _CategoriesScreenState extends State<CategoriesScreen> {
 
-  /// 🔥 LIST (ABHI STATIC - BAAD ME API SE AAYEGA)
+  ///  LIST (ABHI STATIC - BAAD ME API SE AAYEGA)
   List<CategoryModel> categories = [
     CategoryModel(name: "PAN Card", image: "assets/pan.png"),
     CategoryModel(name: "Voter Card", image: "assets/voter.png"),
@@ -40,7 +40,7 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
   @override
   Widget build(BuildContext context) {
 
-    /// 🔥 SORT (ALPHABETICAL)
+    ///  SORT (ALPHABETICAL)
     categories.sort((a, b) => a.name.compareTo(b.name));
 
     return Scaffold(
@@ -50,7 +50,7 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
 
-          /// 🔝 TITLE
+          ///  TITLE
           const Padding(
             padding: EdgeInsets.all(16),
             child: Text(
@@ -62,7 +62,7 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
             ),
           ),
 
-          /// 🔽 GRID
+          ///  GRID
           Expanded(
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 12),
@@ -70,7 +70,7 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
                 itemCount: categories.length,
 
                 gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                  crossAxisCount: 3, // 🔥 3 column
+                  crossAxisCount: 3, //  3 column
                   crossAxisSpacing: 12,
                   mainAxisSpacing: 12,
                   childAspectRatio: 0.8,
@@ -102,7 +102,7 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
 
-                          /// 🖼 IMAGE
+                          /// IMAGE
                           Image.asset(
                             item.image,
                             height: 40,
@@ -110,7 +110,7 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
 
                           const SizedBox(height: 10),
 
-                          /// 📝 TEXT
+                          ///  TEXT
                           Text(
                             item.name,
                             textAlign: TextAlign.center,

@@ -55,7 +55,7 @@ class _FirestCommanScreenState extends State<FirestCommanScreen> {
             decoration: const BoxDecoration(
               color: Colors.white,
               borderRadius: BorderRadius.vertical(
-                top: Radius.circular(30), // 🔥 yahi main cheez hai
+                top: Radius.circular(30), //  yahi main cheez hai
               ),
             ),
             child: IndexedStack(

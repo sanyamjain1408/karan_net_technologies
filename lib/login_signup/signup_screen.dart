@@ -29,7 +29,7 @@ class _SignupScreenState extends State<SignupScreen> {
 
   
 
-  /// 📅 DATE PICKER
+  ///  DATE PICKER
   Future pickDate() async {
     DateTime? pickedDate = await showDatePicker(
       context: context,
@@ -43,7 +43,7 @@ class _SignupScreenState extends State<SignupScreen> {
     }
   }
 
-  /// 🚀 REGISTER API
+  ///  REGISTER API
   Future<void> registerUser() async {
     String name = nameController.text.trim();
     String email = emailController.text.trim();
@@ -52,7 +52,7 @@ class _SignupScreenState extends State<SignupScreen> {
     String password = passwordController.text.trim();
     String confirmPassword = confirmPasswordController.text.trim();
 
-    /// ✅ PASSWORD MATCH CHECK
+    ///  PASSWORD MATCH CHECK
     if (password != confirmPasswordController.text.trim()) {
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(content: Text("Password not match")),
@@ -110,7 +110,7 @@ class _SignupScreenState extends State<SignupScreen> {
     }
   }
 
-  /// 🔢 OTP DIALOG
+  ///  OTP DIALOG
   void showOtpDialog(String email) {
     TextEditingController otpController = TextEditingController();
 
@@ -140,7 +140,7 @@ class _SignupScreenState extends State<SignupScreen> {
     );
   }
 
-  /// ✅ VERIFY OTP
+  ///  VERIFY OTP
   Future<void> verifyOtp(String email, String otp) async {
     final url = "${ApiConfig.baseUrl}/user_app/verify-otp/";
 
@@ -188,7 +188,7 @@ class _SignupScreenState extends State<SignupScreen> {
     }
   }
 
-  /// 🎨 INPUT DECORATION
+  ///  INPUT DECORATION
   InputDecoration inputDecoration(String hint) {
     return InputDecoration(
       filled: true,

@@ -11,13 +11,13 @@ class ProfileScreen extends StatelessWidget {
       body: Column(
         children: [
 
-          /// 🔵 TOP HEADER
+          /// TOP HEADER
           Container(
             padding: const EdgeInsets.fromLTRB(20, 50, 20, 20),
             child: Row(
               children: [
 
-                /// 👤 PROFILE IMAGE
+                ///  PROFILE IMAGE
                 const CircleAvatar(
                   radius: 35,
                   backgroundColor: Colors.white,
@@ -26,7 +26,7 @@ class ProfileScreen extends StatelessWidget {
 
                 const SizedBox(width: 15),
 
-                /// 🧑 NAME + EMAIL
+                /// NAME + EMAIL
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: const [
@@ -51,13 +51,13 @@ class ProfileScreen extends StatelessWidget {
 
                 const Spacer(),
 
-                /// ✏️ EDIT ICON
+                /// EDIT ICON
                 const Icon(Icons.edit, color: Colors.white),
               ],
             ),
           ),
 
-          /// ⚪ WHITE CONTAINER
+          /// WHITE CONTAINER
           Expanded(
             child: Container(
               padding: const EdgeInsets.all(16),
@@ -89,7 +89,7 @@ class ProfileScreen extends StatelessWidget {
 
                   const SizedBox(height: 20),
 
-                  /// 🔴 LOGOUT
+                  /// LOGOUT
                   Container(
                     padding: const EdgeInsets.all(14),
                     decoration: BoxDecoration(
@@ -113,7 +113,7 @@ class ProfileScreen extends StatelessWidget {
     );
   }
 
-  /// 🔥 CARD WRAPPER
+  ///  CARD WRAPPER
   Widget buildCard(List<Widget> children) {
     return Container(
       padding: const EdgeInsets.symmetric(vertical: 8),
@@ -125,7 +125,7 @@ class ProfileScreen extends StatelessWidget {
     );
   }
 
-  /// 🔥 SINGLE ITEM
+  ///  SINGLE ITEM
   Widget buildItem(IconData icon, String title) {
     return InkWell(
       onTap: () {

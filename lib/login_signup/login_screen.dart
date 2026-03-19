@@ -21,7 +21,7 @@ class _LoginScreenState extends State<LoginScreen> {
   final passwordController = TextEditingController();
 
   bool obscurePassword = true;
-  bool isLoading = false;4
+  bool isLoading = false;
 
   final GoogleSignIn _googleSignIn = GoogleSignIn();
 
@@ -63,7 +63,7 @@ class _LoginScreenState extends State<LoginScreen> {
 
       setState(() => isLoading = false);
 
-      /// ✅ SUCCESS
+      ///  SUCCESS
       if (data["status"] == true) {
         Navigator.pushReplacement(
           context,
@@ -108,7 +108,7 @@ class _LoginScreenState extends State<LoginScreen> {
     }
   }
 
-  /// 🔵 GOOGLE LOGIN
+  ///  GOOGLE LOGIN
   Future googleLogin() async {
     try {
       final user = await _googleSignIn.signIn();

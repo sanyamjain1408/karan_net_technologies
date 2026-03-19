@@ -61,13 +61,13 @@ class _AppHeaderState extends State<AppHeader> {
                             context,
                             PageRouteBuilder(
                               transitionDuration: const Duration(
-                                  milliseconds: 500), // 🔥 speed control
+                                  milliseconds: 500), // speed control
                               pageBuilder: (_, __, ___) => const SearchScreen(),
 
                               transitionsBuilder: (_, animation, __, child) {
                                 final offsetAnimation = Tween<Offset>(
                                   begin:
-                                      const Offset(0, 1), // 🔥 niche se aayega
+                                      const Offset(0, 1), // niche se aayega
                                   end: Offset.zero,
                                 ).animate(CurvedAnimation(
                                   parent: animation,

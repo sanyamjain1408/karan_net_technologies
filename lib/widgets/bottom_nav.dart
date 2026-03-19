@@ -16,13 +16,13 @@ class AppBottomNav extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.all(8),
       decoration: BoxDecoration(
-        color: isSelected ? Colors.blue : Colors.transparent, // 🔥 circle
+        color: isSelected ? Colors.blue : Colors.transparent, //  circle
         shape: BoxShape.circle,
       ),
       child: ImageIcon(
         AssetImage(iconPath),
         size: 24,
-        color: isSelected ? Colors.white : Colors.black54, // 🔥 icon color
+        color: isSelected ? Colors.white : Colors.black54, // icon color
       ),
     );
   }
@@ -52,10 +52,10 @@ class AppBottomNav extends StatelessWidget {
           showSelectedLabels: false,
           showUnselectedLabels: false,
 
-          selectedFontSize: 0, // 🔥 gap remove
+          selectedFontSize: 0, //  gap remove
           unselectedFontSize: 0,
 
-          // ❌ remove default color
+          //  remove default color
           selectedItemColor: Colors.transparent,
           unselectedItemColor: Colors.transparent,
 
